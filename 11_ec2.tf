@@ -24,12 +24,7 @@ resource "aws_instance" "hjkim_weba" {
   private_ip             = "10.0.0.11"
   subnet_id              = aws_subnet.hjkim_puba.id
   vpc_security_group_ids = [aws_security_group.hjkim_sg.id]
-  user_data              = <<-EOF
-                 #!/bin/bash
-                 yum install -y httpd
-                 echo "HJKIM-Terraform-1" >> /var/www/html/index.html
-                 systemctl start httpd
-                 EOF
+  user_data              = file("./install.sh")
 }
 
 resource "aws_eip" "hjkim_weba_ip" {
