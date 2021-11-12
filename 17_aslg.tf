@@ -5,9 +5,9 @@ resource "aws_launch_configuration" "hjkim_aslc" {
   iam_instance_profile = "admin_role"
   security_groups = [aws_security_group.hjkim_sg.id]
   key_name = "hjkim-key"
-  # user_data = file("./install.sh")
+  user_data = file("./install.sh")
 
-  lifecycle {
-    create_before_destroy = true
-  }
+  # lifecycle {
+  #  create_before_destroy = true
+  # } 
 }
