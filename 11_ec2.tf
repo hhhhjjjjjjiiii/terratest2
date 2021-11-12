@@ -40,3 +40,7 @@ resource "aws_eip" "hjkim_weba_ip" {
     aws_internet_gateway.hjkim_ig
   ]
   }
+
+   output "public_ip" {
+     value = aws_instance.hjkim_weba.public_ip
+   }
