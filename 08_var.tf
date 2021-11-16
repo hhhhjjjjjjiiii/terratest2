@@ -1,90 +1,90 @@
 variable "name" {
   type = string
-  default = "hjkim"  
+  # default = "hjkim"  
 }
 
 variable "region" {
   type = string
-  default = "ap-northeast-2"
+  # default = "ap-northeast-2"
 }
 
 variable "ava" {
   type = list(string)
-  default = ["a","c"]
+  # default = ["a","c"]
 }
 
 variable "key" {
   type = string
-  default = "hjkim-key"  
+  # default = "hjkim-key"  
 }
 
 variable "cidr_main" {
   type = string
-  default = "10.0.0.0/16"
+  # default = "10.0.0.0/16"
 }
 
 variable "cidr_public" {
   type = list(string)
-  default = ["10.0.0.0/24","10.0.2.0/24"]
+  # default = ["10.0.0.0/24","10.0.2.0/24"]
 }
 
 variable "cidr_private" {
   type = list(string)
-  default = ["10.0.1.0/24","10.0.3.0/24"]
+  # default = ["10.0.1.0/24","10.0.3.0/24"]
 }
 
 variable "cidr_privatedb" {
   type = list(string)
-  default = ["10.0.4.0/24","10.0.5.0/24"]
+  # default = ["10.0.4.0/24","10.0.5.0/24"]
 }
 
 variable "cidr_route" {
   type = string
-  default = "0.0.0.0/0"
+  # default = "0.0.0.0/0"
 }
 
 variable "cidr_ip6" {
   type = string
-  default = "::/0"
+  # default = "::/0"
 }
 variable "protocol_tcp" {
   type = string
-  default = "tcp"
+  # default = "tcp"
 }
 
 variable "protocol_HTTP" {
   type = string
-  default = "HTTP"
+  # default = "HTTP"
 }
 
 variable "protocol_icmp" {
   type = string
-  default = "icmp"
+  # default = "icmp"
 }
 
 variable "protocol_min" {
   type = number
-  default = -1
+  # default = -1
 }
 
 variable "port_ssh" {
   type = number
-  default = 22
+  # default = 22
 }
 
 variable "port_http" {
   type = number
-  default = 80
+  # default = 80
 }
 
 variable "port_mysql" {
   type = number
-  default = 3306
+  # default = 3306
 }
 
 variable "port_all" {
   type = number
-  default = 0
+  # default = 0
 }
 
 /*
@@ -96,45 +96,45 @@ variable "private_ip" {
 
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  # default = "t2.micro"
 }
 
 variable "load_type" {
   type = string
-  default = "application"
+  # default = "application"
 }
 
 variable "storage_size" {
   type = number
-  default = 20
+  # default = 20
 }
 
 variable "storage_type" {
   type = string
-  default = "gp2"
+  # default = "gp2"
 }
 
 variable "rds_engine" {
   type = string
-  default = "mysql"
+  # default = "mysql"
 }
 
 variable "rds_ins_type" {
   type = string
-  default = "db.t2.micro"
+  # default = "db.t2.micro"
 }
 
 variable "rds_name" {
   type = string
-  default = "test"
+  # default = "test"
 }
 
 variable "rds_username" {
   type = string
-  default = "admin"
+  # default = "admin"
 }
 
 variable "rds_password" {
   type = string
-  default = "It12345!"
+  # default = "It12345!"
 }
